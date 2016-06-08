@@ -13,6 +13,7 @@
 		771348361D08A220007007BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771348351D08A220007007BF /* Assets.xcassets */; };
 		771348391D08A220007007BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771348371D08A220007007BF /* LaunchScreen.storyboard */; };
 		771348441D08A220007007BF /* BoundariesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771348431D08A220007007BF /* BoundariesTests.swift */; };
+		7713484F1D08A22E007007BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7713484E1D08A22E007007BF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7713483F1D08A220007007BF /* BoundariesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoundariesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		771348431D08A220007007BF /* BoundariesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundariesTests.swift; sourceTree = "<group>"; };
 		771348451D08A220007007BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7713484E1D08A22E007007BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7713484F1D08A22E007007BF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		771348221D08A220007007BF = {
 			isa = PBXGroup;
 			children = (
+				7713484E1D08A22E007007BF /* MapKit.framework */,
 				7713482D1D08A220007007BF /* Boundaries */,
 				771348421D08A220007007BF /* BoundariesTests */,
 				7713482C1D08A220007007BF /* Products */,
@@ -147,6 +151,11 @@
 					7713482A1D08A220007007BF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 5G77UPAX9C;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7713483E1D08A220007007BF = {
 						CreatedOnToolsVersion = 7.3.1;
