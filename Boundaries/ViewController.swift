@@ -20,9 +20,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         // Do any additional setup after loading the view, typically from a nib.
         
         self.locationManager = CLLocationManager()
+        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         
         self.map.delegate = self
